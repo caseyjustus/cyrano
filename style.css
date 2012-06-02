@@ -1,0 +1,47 @@
+/**
+ * 
+ * style.css
+ * 
+ * #1B1D22 - DARK BLUE
+ * #475D6D - MEDIUM BLUE
+ * #8D98A5 - BLUE GRAY
+ * #262626 - MEDIUM GRAY
+ * #BFBBAE - LIGHT GRAY
+ * 
+ */
+
+/**
+ * 1. Global
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #f0f;
+}
+
+.logo{
+	background: url('images/panelLogo.png');
+	height: 97px;
+	margin: auto;
+	width: 300px;
+}
+
+.panel{
+	float: left;
+	height: 100%;
+	padding: 20px;
+}
+
+.conversation{
+	background: #ff0 url('images/wide_rectangles.png');	
+	width: 20%;
+}
+
+.comments{
+	background: #0ff;
+	width: 75%;
+}
