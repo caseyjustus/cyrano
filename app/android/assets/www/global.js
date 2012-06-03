@@ -45,9 +45,26 @@ $('.upload').live('click', function(event){
 	var selectedMessages = [];
 	$('.message.selected').each(function(){
 		selectedMessages.push(allMessages[$(this).data('message-index')]);
-	})
+	});
 	
 	$('.message.selected').removeClass('selected');
+	
+	selectedMessageStuff = [];
+	
+	_.each(selectedMessages, function(message){
+		selectedMessageStuff.push({
+			'body' : message.body,
+			'is_me' : !(message.person),
+			'date' : message.date
+		})
+	});
+	
+	data = {
+		messages : JSON.stringify(selectedMessageStuff),
+		name : 'some name'
+	};
+	console.log(data.messages);
+	$.getJSON('http://cyrano.willpracht.net/addText.php', data);
 	
 	$('#upload-page').hide();
 	$('#index-page').show();

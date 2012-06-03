@@ -15,7 +15,7 @@
 	<h3>Submitted June 2, 2012 @ 6:47PM CDT</h3>
 	
 	<?php
-		$messages = json_decode($text->messages);
+		$messages = json_decode(stripslashes($text->messages));
 		if($messages){
 			foreach($messages as $message){
 	?>
