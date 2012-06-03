@@ -19,7 +19,13 @@
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 		</li>
 
+		<li class="actions">
+			<button>Submit New Conversation</button>
+		</li>
+
 	</ul>
+
+
 
 </div>
 

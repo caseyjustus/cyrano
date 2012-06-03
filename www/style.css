@@ -75,6 +75,10 @@ h4{
 			background-position: -70px 0;
 		}
 
+		.controls li.use{
+			background-position: -95px 0;
+		}
+
 .datetime{
 	background: #262626;
 	border-radius: 3px;
@@ -194,11 +198,13 @@ ul.sort{
 	width: 20%;
 }
 
-	.conversation button{
+	button{
 		background: #262626;
 		border: 0;
 		border-radius: 5px;
+		clear: both;
 		color: #BFBBAE;
+		float: none;
 		font-size: 14px;
 		padding: 7px 10px;
 	}
@@ -297,7 +303,8 @@ ul.sort{
 		margin: 10px 0 0;
 	}
 
-		.comments .valiantAttempts > li{
+		.comments .valiantAttempts > li,
+		.commentsMobile > li{
 			background: #8D98A5;
 			border: 0;
 			border-radius: 5px;
@@ -321,7 +328,7 @@ ul.sort{
  * Mobile
  */
 .mobile{
-	margin: 10px;
+	margin: 30px;
 }
 
 .mobile h1{
@@ -346,8 +353,21 @@ ul.sort{
 	margin: 10px auto auto;
 }
 
-.mobile ul.conversationMobile li{
-	list-style-type: none;
-
+.mobile ul.conversationMobile{
+	margin-bottom: 20px;
 }
 
+.mobile ul.conversationMobile li{
+	list-style-type: none;
+}
+
+.mobile .commentsMobile{
+	clear: both;
+	margin: 20px 0 40px;
+}
+
+	.mobile .commentsMobile .datetime{
+		position: absolute;
+		right: 45px;
+		top: 1px;
+	}
