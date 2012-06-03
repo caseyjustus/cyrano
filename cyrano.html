@@ -1,0 +1,34 @@
+<head>
+	<title>cyrano</title>
+</head>
+
+<body>
+	{{> header}}
+	{{> sms}}
+	{{> advice}}
+	{{> footer}}
+</body>
+
+<template name="header">
+	<p>Header Yo</p>
+</template>	
+
+<template name="sms">
+	<h1>SMS</h1>
+	<p>{{msg}}</p>
+	<form>
+		<input type="textarea" />
+		<input type="button" value="Click" />
+	</form>
+</template>
+
+<template name="advice">
+	<div id="advice">
+		<h1>Advice</h1>
+		<p>{{msg}}</p>
+	</div>
+</template>
+
+<template name="footer">
+	<p>Footer Yo</p>
+</template>	
