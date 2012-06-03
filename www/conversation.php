@@ -33,6 +33,7 @@
 
 	<textarea>Tell that bitch to be cool. Be cool, bitch!</textarea>
 	<button>Comment</button>
+	<button>Tweet this!</button>
 
 </div>
 
