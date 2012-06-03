@@ -46,9 +46,25 @@
 
 	<div class="comments panel">
 
-		<ul>
+		<div class="hot">
+			<h4>The Hotness</h4>
+			<span>Tell that bitch to be cool! Be cool, bitch!</span>
+			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+		</div>
+
+		<ul class="runnerUp">
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</li>
+		</ul>
+
+		<ul class="niceTry">
 			<li>Comments</li>
 			<li>Comments</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
 
 	</div>

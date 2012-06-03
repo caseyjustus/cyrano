@@ -21,9 +21,20 @@
 }
 
 body{
+	background: #BFBBAE;
 	font-family: "Oswald", serif;
 	font-weight: 300;
 	height: 100%;
+}
+
+.datetime{
+	background: #262626;
+	border-radius: 3px;
+	clear: both; 
+	color: #BFBBAE;
+	float: right; 
+	margin: 5px 0 0 5px;
+	padding: 5px;
 }
 
 .logo{
@@ -46,18 +57,17 @@ body{
 	color: #BFBBAE;
 	margin: 10px 0 0;
 	padding: 10px;
+	width: 75%;
 }
 
 .personA{
 	background: #475D6D;
 	float: left;
-	width: 80%;
 }
 
 .personB{
 	background: #525C4A;
 	float: right;
-	width: 80%;
 }
 
 .conversation{
@@ -107,17 +117,42 @@ body{
 		width: 94%;
 	}
 
-	.conversation .datetime{
-		background: #262626;
-		border-radius: 3px;
-		clear: both; 
-		color: #BFBBAE;
-		float: right; 
-		margin: 5px 0 0 5px;
-		padding: 5px;
-	}
+	
 
 .comments{
-	background: #BFBBAE;
+	padding: 35px 20px;
 	width: 75%;
 }
+
+	.comments .hot{
+		background: #8D98A5;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px #666;
+		padding: 10px;
+		width: 500px;
+	}
+
+		.comments .hot h4{
+			font-size: 24px;
+			font-weight: 300;
+		}
+
+		.comments .hot span{
+			display: block;
+			margin: 20px 0 0;
+		}
+
+	.comments .runnerUp{
+
+	}
+
+	.comments .runnerUp li{
+		background: #8D98A5;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px #666;
+		padding: 10px;
+		width: 500px;
+		list-style-type: none;
+	}
