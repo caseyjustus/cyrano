@@ -31,7 +31,7 @@
 		}
 	?>
 
-	<textarea>Tell that bitch to be cool. Be cool, bitch!</textarea>
+	<textarea></textarea>
 	<button>Comment</button>
 	<button>Tweet this!</button>
 
