@@ -1,3 +1,8 @@
+<?php
+	$stmt = $dbh->prepare('SELECT * FROM texts');
+	$stmt->execute();
+	$texts = $stmt->fetchAll(PDO::FETCH_OBJ);
+?>
 
 <div class="logoMain"></div>
 
@@ -7,126 +12,21 @@
 	<li>New</li>
 </ul>
 
+
 <ul class="main">
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like liked"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like liked"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like liked"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike disliked"></li>
-		</ul>
-	</li>
-	<li>
-		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-		<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
-		<ul class="controls">
-			<li class="like"></li>
-			<li class="dislike"></li>
-		</ul>
-	</li>
+	<?php
+	foreach($texts as $text){
+	?>
+		<li data-text-id="<?php print $text->id; ?>">
+			<span><?php print $text->name; ?></span>
+			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+			<ul class="controls">
+				<li class="like"></li>
+				<li class="dislike"></li>
+			</ul>
+		</li>
+	<?php
+		}
+	?>
 
 </ul>
