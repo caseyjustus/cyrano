@@ -11,7 +11,7 @@
 
 	<div class="logo"></div>
 
-	<h2><?php $text->name; ?></h2>
+	<h2><?php print $text->name; ?></h2>
 	<h3>Submitted June 2, 2012 @ 6:47PM CDT</h3>
 	
 	<?php
