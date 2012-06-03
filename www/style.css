@@ -353,13 +353,18 @@ ul.sort{
 	margin: 10px auto auto;
 }
 
+.mobile ul.conversations li.actions{
+	background: none;
+	box-shadow: none;
+}
+
 .mobile ul.conversationMobile{
 	margin-bottom: 20px;
 }
 
-.mobile ul.conversationMobile li{
-	list-style-type: none;
-}
+	.mobile ul.conversationMobile li{
+		list-style-type: none;
+	}
 
 .mobile .commentsMobile{
 	clear: both;
@@ -371,3 +376,4 @@ ul.sort{
 		right: 45px;
 		top: 1px;
 	}
+
