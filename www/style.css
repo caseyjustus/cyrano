@@ -7,6 +7,7 @@
  * #8D98A5 - BLUE GRAY
  * #262626 - MEDIUM GRAY
  * #BFBBAE - LIGHT GRAY
+ * #3C6656 - DARK GREEN BLUE
  * 
  */
 
@@ -20,13 +21,15 @@
 }
 
 body{
-	background: #f0f;
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	height: 100%;
 }
 
 .logo{
 	background: url('images/panelLogo.png');
 	height: 97px;
-	margin: auto;
+	margin: auto auto 25px;
 	width: 300px;
 }
 
@@ -36,12 +39,85 @@ body{
 	padding: 20px;
 }
 
+.person{
+	border-radius: 6px;
+	box-shadow: 0 1px 2px #1B1D22;
+	clear: both;
+	color: #BFBBAE;
+	margin: 10px 0 0;
+	padding: 10px;
+}
+
+.personA{
+	background: #475D6D;
+	float: left;
+	width: 80%;
+}
+
+.personB{
+	background: #525C4A;
+	float: right;
+	width: 80%;
+}
+
 .conversation{
-	background: #ff0 url('images/wide_rectangles.png');	
+	background: #8D98A5;	
+	box-shadow: 1px 0 3px #1B1D22;
+	overflow: scroll;
 	width: 20%;
 }
 
+	.conversation button{
+		background: #262626;
+		border: 0;
+		border-radius: 5px;
+		color: #BFBBAE;
+		font-size: 14px;
+		padding: 7px 10px;
+	}
+
+	.conversation h2{
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.conversation h3{
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.conversation hr{
+		clear: both;
+		margin: 10px 0;
+	}
+
+	.conversation textarea{
+		background: #BFBBAE;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: inset 1px 1px 3px #262626;
+		font-family: "Oswald", serif;
+		font-size: 16px;
+		font-weight: 300;
+		height: 45px;
+		margin: 10px 0 0;
+		padding: 10px;
+		width: 94%;
+	}
+
+	.conversation .datetime{
+		background: #262626;
+		border-radius: 3px;
+		clear: both; 
+		color: #BFBBAE;
+		float: right; 
+		margin: 5px 0 0 5px;
+		padding: 5px;
+	}
+
 .comments{
-	background: #0ff;
+	background: #BFBBAE;
 	width: 75%;
 }
