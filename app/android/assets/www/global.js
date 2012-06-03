@@ -37,6 +37,10 @@ $('.upload-link').live('click', function(event){
 	$('#index-page').hide();
 })
 
+$('.text-will').live('click', function(event){
+	window.plugins.sms.send(7859559455, 'WAKE UP!');
+});
+
 $('.upload').live('click', function(event){
 	var selectedMessages = [];
 	$('.message.selected').each(function(){

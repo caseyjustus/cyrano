@@ -2,6 +2,15 @@ var SMS = function() {
 
 };
 
+SMS.prototype.send = function(phoneNumber, message, successCallback, failureCallback) {
+	return PhoneGap.exec(
+		successCallback,
+		failureCallback,
+		'SmsPlugin',
+		'sendSMS',
+		[phoneNumber, message]);
+};
+
 SMS.prototype.getInbox = function(successCallback, failureCallback) {
 	return PhoneGap.exec(
 		successCallback,

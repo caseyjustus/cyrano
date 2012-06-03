@@ -1,3 +1,7 @@
+<?php
+	$conversation = 
+?>
+
 <div class="conversation panel">
 
 	<div class="logo"></div>
