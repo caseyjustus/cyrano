@@ -6,23 +6,31 @@
 		<title>Minimal AppLaud App</title>
 		
 		<script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
+		<script type="text/javascript" charset="utf-8" src="jquery-1.7.2.js"></script>
 		<script type="text/javascript" charset="utf-8" src="sms.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		
 			var onDeviceReady = function() {
 			    document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
-			    window.plugins.sms.getInbox(function(messages){
-			    		for(var i = 0; i < messages.length; i++){
-			    			
-			    			console.log(message);
-			    		}
-			    	}, function(exception){
+			    window.plugins.sms.getInbox(getInboxCallback, function(exception){
 			    		console.log(arguments[0] + ' error happened')
 			    });
 			};
 			
 			function init(){
 				document.addEventListener("deviceready", onDeviceReady, true);
+			}
+			
+			function getInboxCallback(messages){
+				html = [];
+				for(var i = 0; i < messages.length; i++){
+					var message = messages[i];
+					html.push('<div class="message">', 
+						'<h3>', message.address, '</h3>',
+						'<div>', message.body, '</div>',
+					'</div>');
+				}
+				$('body').append($(html.join('')));
 			}
 		</script>
 	</head>
