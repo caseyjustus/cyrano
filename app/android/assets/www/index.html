@@ -3,44 +3,37 @@
 	<head>
 		<meta name="viewport" content="width=320; user-scalable=no" />
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		
 		<title>Minimal AppLaud App</title>
 		
+		<link type="text/css" rel="stylesheet" href="styles.css" />
 		<script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
 		<script type="text/javascript" charset="utf-8" src="jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="underscore.js"></script>
 		<script type="text/javascript" charset="utf-8" src="sms.js"></script>
-		<script type="text/javascript" charset="utf-8">
-		
-			var onDeviceReady = function() {
-			    document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
-			    window.plugins.sms.getInbox(getInboxCallback, function(exception){
-			    		console.log(arguments[0] + ' error happened')
-			    });
-			};
-			
-			function init(){
-				document.addEventListener("deviceready", onDeviceReady, true);
-			}
-			
-			function getInboxCallback(messages){
-				html = [];
-				for(var i = 0; i < messages.length; i++){
-					var message = messages[i];
-					html.push('<div class="message">', 
-						'<h3>', message.address, '</h3>',
-						'<div>', message.body, '</div>',
-					'</div>');
-				}
-				$('body').append($(html.join('')));
-			}
-		</script>
+		<script type="text/javascript" charset="utf-8" src="global.js"></script>
 	</head>
-  <body onload="init();" id="stage" class="theme">
-    <h2>Minimal AppLaud App</h2>
-
-	<p>Your app goes here.</p>
-	<p>
-    <span id="devready">onDeviceReady not fired.</span>
-    </p>
-
-  </body>
+	<body onload="init();" id="stage" class="theme">
+		<div id="index-page" class="page">
+			<h1>Home</h1>
+			<a href="#" class="upload-link">Upload Page</a>
+		</div>
+		<div id="upload-page" class="page">
+			<h1>Upload Texts</h1>
+			<ul class="texts">
+			
+			</ul>
+			<button class="upload">Upload</button>
+		</div>
+		<div id="item-page" class="page">
+			<h1>Cyrano</h1>
+			<ul class="texts">
+				
+			</ul>
+			<ul class="comments">
+				
+			</ul>
+		</div>
+	</body>
 </html>

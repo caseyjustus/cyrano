@@ -4,12 +4,30 @@ var SMS = function() {
 
 SMS.prototype.getInbox = function(successCallback, failureCallback) {
 	return PhoneGap.exec(
-		successCallback,    //Success callback from the plugin
-		failureCallback,    //Error callback from the plugin
-		'SmsPlugin',  		//Tell PhoneGap to run "DirectoryListingPlugin" Plugin
-		'getInbox',         //Tell plugin, which action we want to perform
-		[]);        		//Passing list of args to the plugin
+		successCallback,
+		failureCallback,
+		'SmsPlugin',
+		'getInbox',
+		[]);
 };
+
+SMS.prototype.getSent = function(successCallback, failureCallback) {
+	return PhoneGap.exec(
+		successCallback,
+		failureCallback,
+		'SmsPlugin',
+		'getSent',        
+		[]);        		
+};
+
+SMS.prototype.getAll = function(successCallback, failureCallback){
+	return PhoneGap.exec(
+		successCallback,
+		failureCallback,
+		'SmsPlugin',
+		'getAll',        
+		[]);  
+}
  
 PhoneGap.addConstructor(function() {
    PhoneGap.addPlugin("sms", new SMS());

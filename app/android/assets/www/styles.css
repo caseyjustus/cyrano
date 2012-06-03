@@ -1,0 +1,272 @@
+/**
+ * 
+ * style.css
+ * 
+ * #1B1D22 - DARK BLUE
+ * #475D6D - MEDIUM BLUE
+ * #8D98A5 - BLUE GRAY
+ * #262626 - MEDIUM GRAY
+ * #BFBBAE - LIGHT GRAY
+ * #3C6656 - DARK GREEN BLUE
+ * 
+ */
+
+/**
+ * 1. Clear fix
+ * 2. Minor Reset
+ * 3. Global
+ */
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #BFBBAE url('images/vintage_speckles.png');
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	height: 100%;
+	
+}
+
+h4{
+	font-size: 18px;
+}
+
+.datetime{
+	background: #262626;
+	border-radius: 3px;
+	clear: right;
+	color: #BFBBAE;
+	float: right; 
+	margin: 5px 0 0 5px;
+	padding: 5px;
+}
+
+.logo{
+	background: url('images/panelLogo.png');
+	height: 97px;
+	margin: auto auto 25px;
+	width: 300px;
+}
+
+.panel{
+	float: left;
+	height: 100%;
+	padding: 20px;
+}
+
+.person{
+	border-radius: 6px;
+	box-shadow: 0 1px 2px #1B1D22;
+	clear: both;
+	color: #BFBBAE;
+	margin: 10px 0 0;
+	padding: 10px;
+	text-shadow: 0 1px 1px #202A30;
+	width: 75%;
+}
+
+.personA{
+	background: #475D6D;
+	float: left;
+}
+
+.personB{
+	background: #525C4A;
+	float: right;
+}
+
+.conversation{
+	background: #8D98A5;	
+	box-shadow: 1px 0 3px #1B1D22;
+	float: left;
+	height: 1000px;
+	width: 20%;
+}
+
+	.conversation button{
+		background: #262626;
+		border: 0;
+		border-radius: 5px;
+		color: #BFBBAE;
+		font-size: 14px;
+		padding: 7px 10px;
+	}
+
+	.conversation h2{
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.conversation h3{
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.conversation hr{
+		clear: both;
+		margin: 10px 0;
+	}
+
+	.conversation textarea{
+		background: #BFBBAE;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: inset 1px 1px 3px #262626;
+		font-family: "Oswald", serif;
+		font-size: 16px;
+		font-weight: 300;
+		height: 45px;
+		margin: 10px 0 0;
+		padding: 10px;
+		width: 94%;
+	}	
+
+.comments{
+	float: left;
+	padding: 35px 20px;
+	width: 1260px;
+}
+
+	.comments .controls{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+		.comments .controls li{
+			background: url('images/votes.png') no-repeat;
+			height: 23px;
+			float: left;
+			list-style-type: none;
+			margin-left: 5px;
+			width: 23px;
+		}
+
+		.comments .controls li.liked{
+			background-position: -22px 0;
+		}
+
+		.comments .controls li.dislike{
+			background-position: -47px 0;
+		}
+
+		.comments .controls li.disliked{
+			background-position: -70px 0;
+		}
+
+	.comments .hot,
+	.comments .runnerUp{
+		float: left;
+		margin: 0 10px 10px 0;
+		position: relative;
+	}
+
+	.comments .hot{
+		background: #475D6D;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px #666;
+		color: #BFBBAE;
+		padding: 10px;
+		text-shadow: 0 1px 1px #202A30;
+		width: 500px;
+	}
+
+		.comments .hot h4{
+			font-size: 24px;
+			font-weight: 300;
+		}
+
+		.comments .hot span{
+			float: left;
+			margin: 10px 0 0;
+		}
+
+	.comments .runnerUp{
+
+	}
+
+	.comments .runnerUp	h4{
+		font-size: 18px;
+	}
+
+	.comments .runnerUp > li{
+		background: #8D98A5;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px #666;
+		float: left;
+		list-style-type: none;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		position: relative;
+		width: 205px;
+	}
+
+		.comments .runnerUp > li span{
+			float: left;
+			margin: 10px 0 0;
+		}
+
+	.comments .valiantAttempts{
+		margin: 10px 0 0;
+	}
+
+		.comments .valiantAttempts > li{
+			background: #8D98A5;
+			border: 0;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px #666;
+			float: left;
+			list-style-type: none;
+			margin: 0 10px 10px 0;
+			padding: 10px;
+			position: relative;
+			width: 99%;
+		}
+
+		.comments .valiantAttempts li > .datetime{
+			position: absolute;
+			right: 70px;
+			top: 0;
+		}
+
+
+
+
+
+	.selected {
+		background-color: orange;
+	}
+	.upload {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+	}
+	.page { display:none; }
+	#index-page {
+		display: block;
+	}
