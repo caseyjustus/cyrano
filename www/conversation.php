@@ -46,25 +46,80 @@
 
 	<div class="comments panel">
 
-		<div class="hot">
+		<div class="hot group">
 			<h4>The Hotness</h4>
 			<span>Tell that bitch to be cool! Be cool, bitch!</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+			<ul class="controls">
+				<li class="like liked"></li>
+				<li class="dislike"></li>
+			</ul>
 		</div>
 
 		<ul class="runnerUp">
-			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
-			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</li>
+			<li>
+				<h4>2nd Place</h4>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
+			<li>
+				<h4>3rd Place</h4>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike disliked"></li>
+				</ul>
+			</li>
+			<li>
+				<h4>Honorable Mention</h4>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
 		</ul>
 
-		<ul class="niceTry">
-			<li>Comments</li>
-			<li>Comments</li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+		<h4>Valiant Attempts</h4>
+		<ul class="valiantAttempts">
+			<li>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like liked"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
+			<li>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
+			<li>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
+			<li>
+				<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+				<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
+				<ul class="controls">
+					<li class="like"></li>
+					<li class="dislike"></li>
+				</ul>
+			</li>
 		</ul>
 
 	</div>
