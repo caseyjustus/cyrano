@@ -11,7 +11,7 @@
 
 	<div class="logo"></div>
 
-	<h2><?php $text->name; ?></h2>
+	<h2><?php print $text->name; ?></h2>
 	<h3>Submitted June 2, 2012 @ 6:47PM CDT</h3>
 	
 	<?php
@@ -31,8 +31,9 @@
 		}
 	?>
 
-	<textarea>Tell that bitch to be cool. Be cool, bitch!</textarea>
+	<textarea></textarea>
 	<button>Comment</button>
+	<button>Tweet this!</button>
 
 </div>
 
@@ -51,7 +52,7 @@
 	<ul class="runnerUp">
 		<li>
 			<h4>2nd Place</h4>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+			<span>So you made me a bloomin' onion?</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
@@ -60,7 +61,7 @@
 		</li>
 		<li>
 			<h4>3rd Place</h4>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
+			<span>Do you need me to turn around?</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
@@ -69,7 +70,7 @@
 		</li>
 		<li>
 			<h4>Honorable Mention</h4>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+			<span>Wipe away those alligator tears.</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
@@ -81,7 +82,7 @@
 	<h4>Valiant Attempts</h4>
 	<ul class="valiantAttempts">
 		<li>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+			<span>Girl, I'ma go win you a Quadracopter.</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like liked"></li>
@@ -89,7 +90,7 @@
 			</ul>
 		</li>
 		<li>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+			<span>This ain't nothing a Jawbone with a chain can't fix.</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
@@ -97,7 +98,7 @@
 			</ul>
 		</li>
 		<li>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+			<span>Pack your things, we're going to Disney World. I mean, you're going to Disney World. I mean, I'm leaving you.</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
@@ -105,7 +106,7 @@
 			</ul>
 		</li>
 		<li>
-			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.</span>
+			<span>I told you those onions were for dinner tomorrow night!</span>
 			<div class="datetime">June 1, 2012 @ 10:00PM CDT</div>
 			<ul class="controls">
 				<li class="like"></li>
