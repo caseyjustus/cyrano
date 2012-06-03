@@ -117,6 +117,11 @@ ul.main{
 	width: 1040px;
 }
 
+	ul.main a{
+		color: white;
+		text-decoration: none;
+	}
+
 	ul.main > li{ 
 		background: #475D6D;
 		border: 0;
