@@ -30,10 +30,8 @@
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-weight: 300;
+	font-weight: 400;
 }
-
-
 
 *{
 	margin: 0;
@@ -44,13 +42,38 @@ body{
 	background: #BFBBAE url('images/vintage_speckles.png');
 	font-family: "Oswald", serif;
 	font-weight: 300;
-	height: 100%;
-	overflow: hidden;
 }
 
 h4{
 	font-size: 18px;
 }
+
+.controls{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+		.controls > li{
+			background: url('images/votes.png') no-repeat;
+			height: 25px;
+			float: left;
+			list-style-type: none;
+			margin-left: 5px;
+			width: 23px;
+		}
+
+		.controls li.liked{
+			background-position: -22px 0;
+		}
+
+		.controls li.dislike{
+			background-position: -47px 0;
+		}
+
+		.controls li.disliked{
+			background-position: -70px 0;
+		}
 
 .datetime{
 	background: #262626;
@@ -68,6 +91,47 @@ h4{
 	margin: auto auto 25px;
 	width: 300px;
 }
+
+.logoMain{
+	background: url('images/mainLogo.png');
+	height: 176px;
+	margin: 50px auto 25px;
+	width: 533px;
+}
+
+ul.main{
+	margin: auto;
+	padding: 20px;
+	width: 1040px;
+}
+
+	ul.main > li{ 
+		background: #475D6D;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px #666;
+		color: #BFBBAE;
+		display: inline-block;
+		height: 150px;
+		list-style-type: none;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		position: relative;
+		text-shadow: 0 1px 1px #202A30;
+		width: 230px;
+	}
+
+		ul.main > li > .controls{
+			bottom: 12px;
+			left: 2px;
+			top: auto;
+		}
+
+		ul.main > li > .datetime{
+			bottom: 12px;
+			position: absolute;
+			right: 10px;
+		}
 
 .panel{
 	float: left;
@@ -147,36 +211,8 @@ h4{
 .comments{
 	float: left;
 	padding: 35px 20px;
-	width: 1260px;
+	width: 1250px;
 }
-
-	.comments .controls{
-		position: absolute;
-		right: 10px;
-		top: 10px;
-	}
-
-		.comments .controls li{
-			background: url('images/votes.png') no-repeat;
-			height: 23px;
-			float: left;
-			list-style-type: none;
-			margin-left: 5px;
-			width: 23px;
-		}
-
-		.comments .controls li.liked{
-			background-position: -22px 0;
-		}
-
-		.comments .controls li.dislike{
-			background-position: -47px 0;
-		}
-
-		.comments .controls li.disliked{
-			background-position: -70px 0;
-		}
-
 	.comments .hot,
 	.comments .runnerUp{
 		float: left;
