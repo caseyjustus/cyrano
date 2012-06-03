@@ -1,5 +1,5 @@
 <?php
-	$conversation = 
+	$conversation = null;
 ?>
 
 <div class="conversation panel">
